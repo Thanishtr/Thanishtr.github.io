@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Thanish TR - Creative Branding & Digital Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-gray-700">
+    <header
+      class="bg-[#fdfaf7]/80 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="#home" class="text-2xl font-bold text-gray-800"
+            >Mohammed Thanish TR</a
+          >
+          <nav class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link font-medium">Home</a>
+            <a href="#portfolio" class="nav-link font-medium">Portfolio</a>
+            <a href="#services" class="nav-link font-medium">Services</a>
+            <a href="#about" class="nav-link font-medium">About</a>
+            <a href="#contact" class="nav-link font-medium">Contact</a>
+          </nav>
+          <button id="mobile-menu-button" class="md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-[#fdfaf7]"
+      >
+        <a href="#home" class="block nav-link">Home</a>
+        <a href="#portfolio" class="block nav-link">Portfolio</a>
+        <a href="#services" class="block nav-link">Services</a>
+        <a href="#about" class="block nav-link">About</a>
+        <a href="#contact" class="block nav-link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section text-white flex items-center">
+        <div
+          class="container mx-auto px-6 flex justify-start items-center w-full pt-28 pb-10 md:pt-20"
+        >
+          <div class="max-w-3xl text-left">
+            <h2 class="text-xl font-semibold text-gray-200 animate-on-scroll">
+              GRAPHIC DESIGNER
+            </h2>
+            <h1
+              class="text-4xl md:text-6xl font-extrabold leading-tight my-4 animate-on-scroll"
+              style="transition-delay: 150ms"
+            >
+              Mohammed Thanish TR
+            </h1>
+            <p
+              class="text-lg md:text-xl max-w-3xl mb-8 font-light text-gray-200 animate-on-scroll"
+              style="transition-delay: 300ms"
+            >
+              “Crafting unique, creative, and impactful designs that tell
+              stories and leave lasting impressions.”
+            </p>
+            <a
+              href="#contact"
+              class="border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 animate-on-scroll"
+              style="transition-delay: 450ms"
+              >CONTACT NOW</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="py-20 bg-[#fdfaf7]">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">
+              My Portfolio
+            </h2>
+            <p class="text-lg text-gray-500 mt-2 animate-on-scroll">
+              My portfolio is a reflection of my journey as a graphic designer,
+              showcasing a blend of creativity, precision, and storytelling.
+              Each project highlights my ability to transform ideas into
+              visually compelling designs, whether it’s branding, social media
+              campaigns, or print materials. With a focus on detail and
+              originality, I ensure every design not only captures attention but
+              also communicates the right message to the target audience.
+            </p>
+          </div>
+
+          <div
+            class="flex justify-center flex-wrap gap-2 mb-10 animate-on-scroll"
+          >
+            <button
+              class="filter-btn active-filter px-4 py-2 rounded-full font-medium transition"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full font-medium transition"
+              data-filter="logo"
+            >
+              Logos & Branding
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full font-medium transition"
+              data-filter="social"
+            >
+              Social Media
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full font-medium transition"
+              data-filter="print"
+            >
+              Brochures & Print
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full font-medium transition"
+              data-filter="web"
+            >
+              Website Banners
+            </button>
+          </div>
+
+          <div
+            id="portfolio-grid"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <div class="gallery-item" data-category="logo">
+              <img src="assets/logo.jpg" alt="Fantacy DHABA Logo" />
+            </div>
+            <div class="gallery-item" data-category="print">
+              <img
+                src="assets/flyers.jpg"
+                alt="MS Digital Marketing Agency Logo"
+              />
+            </div>
+            <div class="gallery-item" data-category="social">
+              <img
+                src="assets/insta stories.jpg"
+                alt="Peking Chinese Restaurant Ad"
+              />
+            </div>
+            <div class="gallery-item" data-category="print">
+              <img src="assets/brchr.jpg" alt="Souq e Kamil Vintage Post" />
+            </div>
+            <div class="gallery-item" data-category="social">
+              <img src="assets/sm.jpg" alt="IQACO Brochure" />
+            </div>
+            <div class="gallery-item" data-category="web">
+              <img src="assets/web.jpg" alt="Bosch Tools Banner" />
+            </div>
+
+            <div class="gallery-item hidden-by-default" data-category="logo">
+              <img src="assets/extra/b5 3.jpg" alt="Hidden Logo" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="print">
+              <img src="assets/extra/ba 1.jpg" alt="Hidden Print" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="print">
+              <img src="assets/extra/ba 2.jpg" alt="Hidden Print" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="logo">
+              <img src="assets/extra/br 2.jpg" alt="Hidden Logo" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="logo">
+              <img src="assets/extra/br1.jpg" alt="Hidden Logo" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="print">
+              <img src="assets/extra/pr 10.jpg" alt="Hidden Print" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="print">
+              <img src="assets/extra/pr 12.jpg" alt="Hidden Print" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="social">
+              <img src="assets/extra/sm 1.jpg" alt="Hidden Social Media" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="social">
+              <img src="assets/extra/sm 2.jpg" alt="Hidden Social Media" />
+            </div>
+            <div class="gallery-item hidden-by-default" data-category="social">
+              <img src="assets/extra/sm 3.jpg" alt="Hidden Social Media" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">
+              My Services
+            </h2>
+            <p class="text-lg text-gray-500 mt-2 animate-on-scroll">
+              I provide a wide range of creative design services tailored to
+              help businesses and individuals build strong brand identities.
+              From designing memorable logos and impactful social media graphics
+              to crafting professional brochures, profiles, and website visuals,
+              my work is centered on delivering designs that engage and inspire.
+              Every service is backed by strategic thinking, ensuring that the
+              final product is not just visually appealing but also effective in
+              achieving your goals.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
+          >
+            <div class="service-card animate-on-scroll">
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl mb-3">Branding & Identity</h3>
+              <p class="text-gray-500">
+                Your brand is more than just a logo—it’s the story people
+                remember. I create unique brand identities that capture your
+                vision, values, and personality. From striking logos to complete
+                brand kits, I ensure every design element works together to make
+                your business stand out with confidence and consistency.
+              </p>
+            </div>
+
+            <div
+              class="service-card animate-on-scroll"
+              style="transition-delay: 100ms"
+            >
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path
+                    d="M20.4 14.5A1.5 1.5 0 0 0 19 13h-2a1.5 1.5 0 0 0-1.5 1.5v.5A1.5 1.5 0 0 0 17 17h2a1.5 1.5 0 0 0 1.5-1.5v-2"
+                  />
+                  <path
+                    d="M3 13h2a1.5 1.5 0 0 1 1.5 1.5v.5A1.5 1.5 0 0 1 5 17H3a1.5 1.5 0 0 1-1.5-1.5v-2A1.5 1.5 0 0 1 3 13"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl mb-3">Digital & Social Media</h3>
+              <p class="text-gray-500">
+                In today’s world, your first impression often happens online. I
+                design eye-catching social media content, digital ads, and
+                creative campaigns that not only grab attention but also
+                encourage interaction. Every design is tailored to your
+                audience, helping you grow your digital presence and connect
+                with people in meaningful ways.
+              </p>
+            </div>
+            <div
+              class="service-card animate-on-scroll"
+              style="transition-delay: 200ms"
+            >
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl mb-3">Print & Publication</h3>
+              <p class="text-gray-500">
+                From sleek brochures and elegant company profiles to flyers and
+                posters that grab attention, I design print materials that are
+                both visually appealing and professionally polished. Each piece
+                is carefully crafted to represent your brand while leaving a
+                lasting impression on your clients and customers.
+              </p>
+            </div>
+            <div
+              class="service-card animate-on-scroll"
+              style="transition-delay: 300ms"
+            >
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="14" x="2" y="3" rx="2" />
+                  <line x1="2" x2="22" y1="21" y2="21" />
+                  <line x1="12" x2="12" y1="17" y2="21" />
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl mb-3">Web & E-commerce</h3>
+              <p class="text-gray-500">
+                Your website is your digital storefront—and it deserves to look
+                and feel amazing. I design modern website graphics, banners, and
+                e-commerce visuals that elevate user experience while staying
+                true to your brand identity. The goal is simple: to make your
+                online presence both attractive and effective.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 bg-[#fdfaf7]">
+        <div class="container mx-auto px-6 max-w-4xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">
+              About Me
+            </h2>
+          </div>
+          <div class="about-card animate-on-scroll">
+            <img
+              src="assets/thanish profile.jpg"
+              class="w-32 h-32 rounded-full mx-auto mb-6"
+              alt="Mohammed Thanish TR"
+            />
+            <h3 class="text-2xl font-bold mb-2">Mohammed Thanish TR</h3>
+            <p class="text-gray-500 leading-relaxed">
+              I am Mohammed Thanish TR, a passionate graphic designer with a
+              keen eye for aesthetics and functionality. My work spans across
+              industries including retail, hospitality, technology, and
+              construction, allowing me to bring diverse perspectives to every
+              project. With a commitment to creativity and innovation, I aim to
+              deliver designs that resonate with audiences, strengthen brands,
+              and create lasting impressions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 bg-[#2a2321] text-gray-100">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll">
+            Get In Touch
+          </h2>
+          <p class="mb-8 animate-on-scroll">
+            I’m available for freelance work or collaborations. Send me a
+            message and I’ll get back to you shortly.
+          </p>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xldprdpp"
+            method="POST"
+            class="space-y-6 animate-on-scroll"
+            novalidate
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="w-full p-4 rounded-lg text-gray-900"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full p-4 rounded-lg text-gray-900"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="w-full p-4 rounded-lg text-gray-900"
+              rows="6"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-[#d97706] hover:bg-[#b45309] text-white font-bold py-3 px-8 rounded-full transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p>
+          &copy; <span id="current-year"></span> Mohammed Thanish TR. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/917338352594?text=Hello!%20I%20saw%20your%20portfolio%20and%20I'm%20interested%20in%20your%20services."
+      id="whatsapp-button"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      <img
+        src="assets/—Pngtree—whatsapp icon whatsapp logo_3584844.png"
+        alt="Chat on WhatsApp"
+        class="whatsapp-icon-img"
+      />
+    </a>
+
+    <div id="notification" class="notification">
+      <p id="notification-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
